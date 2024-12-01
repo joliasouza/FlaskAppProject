@@ -1,6 +1,6 @@
 # 📋 TO-DO App - Gerenciador de Tarefas
 
-Projeto de criação de um gerenciador de tarefas desenvolvido para a aula de Redes para Computadores. O projeto é uma aplicação fullstack utilizando **JavaScript**, **HTML**, **CSS**, **SQLite3** e **Postman** para testes de API.
+Projeto de criação de um gerenciador de tarefas desenvolvido para a aula de Redes de Computadores. O projeto é uma aplicação fullstack utilizando **JavaScript**, **HTML**, **CSS**, **SQLite3** e **Postman** para testes de API.
 
 ## 🛠️ Tecnologias Utilizadas
 - **Frontend**: HTML, CSS, JavaScript
