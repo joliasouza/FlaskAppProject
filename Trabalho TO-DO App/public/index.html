@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerenciamento de Tarefas</title>
+</head>
+<body>
+    <h1>TO-DO <span>APP</span></h1>
+    <div class="add">
+        <button onclick="mostrarFormulario()" id="adicionar-btn">Adicionar Tarefa</button>
+    </div>
+    <div id="overlay">
+        <div id="produto-form" style="display: none;">
+            <input type="hidden" id="id">
+            <input type="text" id="nome" placeholder="Nome da tarefa">
+            <input type="text" id="descricao" placeholder="Descrição da tarefa">
+            <div id="produto-status" class="hidden">
+                <select id="status">
+                    <option value="tarefas do dia">Tarefas do dia</option>
+                    <option value="fazendo">Fazendo</option>
+                    <option value="concluida">Concluída</option>
+                </select>
+            </div>
+            <button onclick="adicionarOuAtualizarProduto()">Salvar Tarefa</button>
+            <button onclick="removerProduto()" id="remover-btn" style="display:none;">Excluir Tarefa</button>
+            <button onclick="cancelarEdicao()" id="cancelar-btn" style="display:none;">Cancelar</button>
+        </div>
+    </div>
+    
+
+    <div class="columns">
+        <div class="column">
+            <h3>Tarefas do dia</h3>
+            <div class="tasks" id="tarefas-do-dia"></div>
+        </div>
+        <div class="column">
+            <h3>Fazendo</h3>
+            <div class="tasks" id="fazendo"></div>
+        </div>
+        <div class="column">
+            <h3>Concluídas</h3>
+             <div class="tasks" id="concluidas"></div>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
